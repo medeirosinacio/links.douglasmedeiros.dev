@@ -1,0 +1,67 @@
+# General
+title: The Awesome Jekyll Template
+email: example_author@email.com
+source: .
+destination: ./public
+baseurl: ""
+url: https://jekyll-bootstrap.douglasmedeiros.dev
+srcurl: ""
+lang: pt-BR
+locale: pt_BR
+author: Example Author
+google_analytics: "" # UA-111111111-1
+published: true
+
+# Staticforms form contact email
+staticforms_api_key: b805ad43-5c0a-42f4-bcb7-f08c89da57b3 # jekyll-bootstrap@outlook.com
+
+# Paginator configuration
+paginate: 3
+paginate_path: "/blog/pagina/:num"
+
+# disqus comment
+disqus_api_url: jekyll-bootstrap-douglasmedeiros-dev.disqus.com
+
+# Social Media
+social:
+  name: Example Author
+  links:
+    - https://www.instagram.com/example_author/
+    - https://twitter.com/example_author
+    - https://github.com/example_author
+    - https://www.linkedin.com/in/example_author/
+
+# Site Paths
+post_path: /assets/images/posts/
+icon_path: /assets/icons/
+image_path: /assets/images/
+css_path: /assets/css/
+js_path: /assets/scripts/
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-autoprefixer
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+sass:
+  sass_dir: assets/css
+  style: compressed
+exclude:
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - app
+  - .idea
+  - server.sh
+  - LICENSE
