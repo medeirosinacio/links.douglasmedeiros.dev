@@ -4,10 +4,15 @@ layout: default
 <!-- Skip to main content for accessibility -->
 <a class="visually-hidden-focusable" href="#main-content">Pular para o conteúdo principal</a>
 
+<div id="bg-home-gif" class="bg-home-gif"></div>
 <div class="container-lg">
     <!-- Profile Section -->
     <header class="profile-section" itemscope itemtype="https://schema.org/Person">
-        <div class="avatar" aria-label="Avatar de Douglas Medeiros">DM</div>
+        <div class="avatar"
+             aria-label="Avatar de Douglas Medeiros"
+             style="background-image: url('{{ site.srcurl }}{{ site.image_path }}/douglas-medeiros.png');"
+        >
+        </div>
         <h1 class="profile-name" itemprop="name">Douglas Medeiros</h1>
         <p class="profile-bio" itemprop="jobTitle">Engenheiro de Software no PicPay • Tech Lead • Especialista PHP</p>
         <meta itemprop="worksFor" content="PicPay">

@@ -28,11 +28,23 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   background: var(--bg-dark);
-  background-image:
-          radial-gradient(circle at 25% 25%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-          radial-gradient(circle at 75% 75%, rgba(129, 140, 248, 0.08) 0%, transparent 50%);
   color: var(--text-light);
   overflow-x: hidden;
+}
+
+.bg-home-gif {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: -3;
+  position: fixed;
+  background-image: url("/assets/images/bg-home.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  opacity: 0.3 !important;
 }
 
 /* Performance optimizations */
@@ -43,24 +55,6 @@ body {
 img, video, iframe {
   max-width: 100%;
   height: auto;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-darker);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--bs-primary);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #818cf8;
 }
 
 /* Profile Section */
@@ -85,7 +79,6 @@ img, video, iframe {
   width: 140px;
   height: 140px;
   margin: 0 auto 2rem;
-  background: linear-gradient(135deg, var(--bs-primary) 0%, #818cf8 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -98,19 +91,9 @@ img, video, iframe {
           0 0 0 6px rgba(99, 102, 241, 0.2),
           0 20px 40px rgba(99, 102, 241, 0.15);
   position: relative;
-  transition: all 0.3s ease;
-  will-change: transform;
+  background-size: cover;
 }
 
-.avatar::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  border-radius: 50%;
-  background: conic-gradient(from 0deg, var(--bs-primary), #818cf8, var(--bs-primary), #818cf8);
-  animation: rotate 8s linear infinite;
-  z-index: -1;
-}
 
 @keyframes rotate {
   to { transform: rotate(360deg); }

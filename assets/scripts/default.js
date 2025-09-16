@@ -155,3 +155,11 @@ document.addEventListener('click', (e) => {
         }
     }
 });
+
+function loadHighResImage(elem, highResUrl) {
+    let image = new Image();
+    image.addEventListener('load', () => elem.setAttribute('style', 'background-image: url("' + highResUrl + '") !important'));
+    image.src = highResUrl;
+}
+
+loadHighResImage(document.getElementById('bg-home-gif'), '/assets/gifs/bg-home.gif');
