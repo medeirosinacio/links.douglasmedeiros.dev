@@ -1,149 +1,182 @@
 ---
 layout: default
 ---
+<!-- Skip to main content for accessibility -->
+<a class="visually-hidden-focusable" href="#main-content">Pular para o conteúdo principal</a>
 
-<main class="bg-dark py-5">
-    <div class="container px-5 py-0 py-lg-5" data-aos="zoom-out">
-        <div class="row gx-5 align-items-center justify-content-center py-0 py-lg-5">
-            <div class="col-lg-8 col-xl-7 col-xxl-6">
-                <div class="my-5 text-center text-xl-start">
-                    <h1 class="display-5 fw-bolder text-white mb-2">
-                        Um template Jekyll completo com Bootstrap para Github Pages!
-                    </h1>
-                    <p class="lead fw-normal text-white-50 mb-4">
-                        Você esta na URL base do template, totalmente em HTML5 e Bootstrap, esta pronto para começar seu
-                        projeto?!
-                    </p>
-                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Documentação</a>
-                        <a class="btn btn-outline-light btn-lg px-4" target="_blank"
-                           href="https://github.com/medeirosinacio/jekyll-bootstrap-github-pages">
-                            <i class="bi bi-github pe-2"></i> Ver mais
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-                <img class="img-fluid rounded-3 my-5"
-                     src="{{ site.srcurl }}{{ site.image_path }}600x400.png"
-                     alt="Banner">
-            </div>
-        </div>
-    </div>
-</main>
+<div class="container-lg">
+    <!-- Profile Section -->
+    <header class="profile-section" itemscope itemtype="https://schema.org/Person">
+        <div class="avatar" aria-label="Avatar de Douglas Medeiros">DM</div>
+        <h1 class="profile-name" itemprop="name">Douglas Medeiros</h1>
+        <p class="profile-bio" itemprop="jobTitle">Engenheiro de Software no PicPay • Tech Lead • Especialista PHP</p>
+        <meta itemprop="worksFor" content="PicPay">
+        <meta itemprop="knowsAbout" content="PHP, Laravel, Symfony, Arquitetura de Software, HyperF">
+    </header>
 
-<!-- Features section-->
-<section class="py-5" id="features" data-aos="fade-up">
-    <div class="container px-5 my-5">
-        <div class="row gx-5">
-            <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Leia sobre as tecnologias integradas</h2>
-            </div>
-            <div class="col-lg-8">
-                <div class="row gx-5 row-cols-1 row-cols-md-2">
-                    <a class="col mb-5 h-100 text-dark text-decoration-none link-hover-blue"
-                       href="https://jekyllrb.com/docs/"
-                       data-aos="fade-up"
-                       target="_blank">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-                            <i class="bi bi-cup-straw"></i>
+    <!-- Main Content -->
+    <main id="main-content" class="row g-5 mb-5">
+        <!-- Links Section -->
+        <section class="col-lg-7" aria-labelledby="links-title">
+            <h2 id="links-title" class="section-title">
+                <i class="bi bi-link-45deg" aria-hidden="true"></i>
+                Meus Links
+            </h2>
+            <nav aria-label="Links principais de Douglas Medeiros">
+                <div class="d-flex flex-column gap-3">
+                    {% for social in site.data.social %}
+                    {% if social.enabled == false %}
+                        {% continue %}
+                    {% endif %}
+                    <a href="{{ social.url }}" class="link-card fade-in"
+                       title="Acesse o meu {{ social.name }}"
+                       target="_blank"
+                       rel="noopener">
+                        <div class="d-flex align-items-center">
+                            <i class="bi {{ social.icon }} link-icon me-3" aria-hidden="true"></i>
+                            <div class="flex-grow-1">
+                                <div class="link-title">{{ social.name }}</div>
+                                <p class="link-desc">{{ social.description }}</p>
+                            </div>
+                            <i class="bi bi-arrow-up-right link-arrow" aria-hidden="true"></i>
                         </div>
-                        <h2 class="h5">Jekyll</h2>
-                        <p class="mb-0"> Jekyll é um gerador de sites estáticos. Ele pega o texto escrito em sua
-                            linguagem de marcação favorita e usa layouts para criar um site estático. Você pode ajustar
-                            a aparência do site, os URLs, os dados exibidos na página e muito mais.</p>
                     </a>
-                    <a class="col mb-5 h-100 text-dark text-decoration-none link-hover-blue"
-                       href="https://getbootstrap.com/"
-                       data-aos="fade-up"
-                       target="_blank">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-                            <i class="bi bi-bootstrap"></i>
-                        </div>
-                        <h2 class="h5">Bootstrap</h2>
-                        <p class="mb-0">O Bootstrap é uma ferramenta gratuita para desenvolvimento HTML, CSS e JS. Crie
-                            protótipos rápidamente ou aplicações completas com variáveis e mixins Sass, sistemas
-                            de grid responsivo, componentes pré-construídos e poderosos plugins.</p>
-                    </a>
-                    <a class="col mb-5 mb-md-0 h-100 text-dark text-decoration-none link-hover-blue"
-                       href="#"
-                       data-aos="fade-up"
-                       target="_blank">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-                            <i class="bi bi-signpost-split"></i>
-                        </div>
-                        <h2 class="h5">API's</h2>
-                        <p class="mb-0">Integração completa com API's externas e gratuitas para geração de comentarios,
-                            via Disqus, contadores de visualização com CountAPI, e mais!</p>
-                    </a>
-                    <a class="col h-100 text-dark text-decoration-none link-hover-blue"
-                       href="https://pages.github.com/"
-                       data-aos="fade-up"
-                       target="_blank">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-                            <i class="bi bi-github"></i>
-                        </div>
-                        <h2 class="h5">Github Pages</h2>
-                        <p class="mb-0">As páginas do GitHub são páginas da web públicas para usuários, organizações e
-                            repositórios, que são hospedadas gratuitamente no github.io domínio do GitHub ou em um nome
-                            de domínio personalizado de sua escolha. As páginas do GitHub são fornecidas por Jekyll nos
-                            bastidores, então são uma ótima maneira de hospedar seu site baseado em Jekyll
-                            gratuitamente.</p>
-                    </a>
+                    {% endfor %}
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </nav>
+        </section>
 
-<!-- Testimonial section-->
-<div class="py-5 bg-light">
-    <div class="container px-5 my-5"  data-aos="fade-up">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-10 col-xl-7">
-                <div class="text-center">
-                    <div class="fs-4 mb-4 fst-italic">"Esse template vem com configuração pronta para você montar seu
-                        blog ou publicar seus artigos."
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="rounded-circle me-3" src="{{ site.srcurl }}{{ site.image_path }}40x40.png"
-                             alt="Avatar">
-                        <div class="fw-bold">
-                            Douglas Medeiros
-                            <span class="fw-bold text-primary mx-1">/</span>
-                            CEO da Poha Toda
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        <!-- Events Section -->
+        <aside class="col-lg-5" aria-labelledby="events-title">
+            <div class="events-sticky">
+                <h2 id="events-title" class="section-title">
+                    <i class="bi bi-calendar-event" aria-hidden="true"></i>
+                    Próximos Eventos
+                </h2>
 
-<!-- Blog preview section-->
-<section class="py-5">
-    <div class="container px-5 my-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6"  data-aos="fade-up">
-                <div class="text-center">
-                    <h2 class="fw-bolder">Monte seu blog</h2>
-                    <p class="lead fw-normal text-muted mb-5">
-                        Crie e compartilhe com o mundo o que você é, tenha um sistema de paginação, comentarios e
-                        visualizações! Tudo gerado automaticamente pronto para publicar.
-                    </p>
+                <div class="timeline" role="list" aria-label="Cronograma de eventos">
+                {% for event in site.data.events %}
+                {% if event.enabled == false %}
+                {% continue %}
+                {% endif %}
+                    <article class="timeline-item fade-in" role="listitem"
+                             itemscope itemtype="https://schema.org/Event">
+                        <time class="event-date" datetime="2025-09-15" itemprop="startDate">{{ event.date }}</time>
+                        <h3 class="event-title" itemprop="name">
+                            <a href="{{ event.url }}" class="text-decoration-none text-white" target="_blank" rel="noopener" title="Detalhes do evento {{ event.name }}">
+                                {{ event.name }}
+                            </a>
+                        </h3>
+                        <div class="event-location" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                            <i class="bi {{ event.icon }}" aria-hidden="true"></i>
+                            <span itemprop="address">{{ event.location }}</span>
+                        </div>
+                    </article>
+                </a>
+                {% endfor %}
                 </div>
-            </div>
-        </div>
-        <div class="row gx-5"  data-aos="fade-up">
-            {% include blog-recents-posts.html %}
-        </div>
-        <!-- Call to action-->
-        <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5"  data-aos="fade-up">
-            <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-                <div class="mb-4 mb-xl-0">
-                    <h3 class="fs-3 fw-bold text-white">Banner para anuncios de produtos ou propaganda</h3>
-                    <div class="text-white-50">Exemplo de banner para seu site.</div>
-                </div>
+
+<!--                <button class="btn btn-custom w-100" data-bs-toggle="collapse" data-bs-target="#allEvents"-->
+<!--                        aria-expanded="false" aria-controls="allEvents"-->
+<!--                        title="Expandir para ver todos os eventos">-->
+<!--                    Ver todos os eventos-->
+<!--                </button>-->
             </div>
         </aside>
-    </div>
-</section>
+    </main>
+
+    <!-- All Events Section (Collapsible) -->
+<!--    <section class="collapse" id="allEvents" aria-labelledby="all-events-title">-->
+<!--        <div class="text-center mb-5">-->
+<!--            <h2 id="all-events-title" class="section-title justify-content-center">-->
+<!--                <i class="bi bi-calendar2-range" aria-hidden="true"></i>-->
+<!--                Todos os Eventos-->
+<!--            </h2>-->
+
+<!--            <div class="row justify-content-center">-->
+<!--                <div class="col-lg-8">-->
+<!--                    <div class="timeline" role="list" aria-label="Lista completa de eventos">-->
+<!--                        &lt;!&ndash; Eventos passados &ndash;&gt;-->
+<!--                        <article class="timeline-item past" role="listitem"-->
+<!--                                 itemscope itemtype="https://schema.org/Event">-->
+<!--                            <time class="event-date" datetime="2025-07-20" itemprop="startDate">20 Jul 2025</time>-->
+<!--                            <h3 class="event-title" itemprop="name">PHP Day Brasil 2025</h3>-->
+<!--                            <div class="event-location" itemprop="location" itemscope-->
+<!--                                 itemtype="https://schema.org/Place">-->
+<!--                                <i class="bi bi-geo-alt" aria-hidden="true"></i>-->
+<!--                                <span itemprop="address">Rio de Janeiro, RJ</span>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        <article class="timeline-item past" role="listitem"-->
+<!--                                 itemscope itemtype="https://schema.org/Event">-->
+<!--                            <time class="event-date" datetime="2025-06-05" itemprop="startDate">05 Jun 2025</time>-->
+<!--                            <h3 class="event-title" itemprop="name">DevOps Summit 2025</h3>-->
+<!--                            <div class="event-location" itemprop="location" itemscope-->
+<!--                                 itemtype="https://schema.org/VirtualLocation">-->
+<!--                                <i class="bi bi-camera-video" aria-hidden="true"></i>-->
+<!--                                <span itemprop="url">Online</span>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        &lt;!&ndash; Eventos futuros &ndash;&gt;-->
+<!--                        <article class="timeline-item" role="listitem"-->
+<!--                                 itemscope itemtype="https://schema.org/Event">-->
+<!--                            <time class="event-date" datetime="2025-09-15" itemprop="startDate">15 Set 2025</time>-->
+<!--                            <h3 class="event-title" itemprop="name">PHP Conference Brasil 2025</h3>-->
+<!--                            <div class="event-location" itemprop="location" itemscope-->
+<!--                                 itemtype="https://schema.org/Place">-->
+<!--                                <i class="bi bi-geo-alt" aria-hidden="true"></i>-->
+<!--                                <span itemprop="address">São Paulo, SP</span>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        <article class="timeline-item" role="listitem"-->
+<!--                                 itemscope itemtype="https://schema.org/Event">-->
+<!--                            <time class="event-date" datetime="2025-09-28" itemprop="startDate">28 Set 2025</time>-->
+<!--                            <h3 class="event-title" itemprop="name">DevFest Floripa 2025</h3>-->
+<!--                            <div class="event-location" itemprop="location" itemscope-->
+<!--                                 itemtype="https://schema.org/Place">-->
+<!--                                <i class="bi bi-geo-alt" aria-hidden="true"></i>-->
+<!--                                <span itemprop="address">Florianópolis, SC</span>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        <article class="timeline-item" role="listitem"-->
+<!--                                 itemscope itemtype="https://schema.org/Event">-->
+<!--                            <time class="event-date" datetime="2025-10-12" itemprop="startDate">12 Out 2025</time>-->
+<!--                            <h3 class="event-title" itemprop="name">TechTalk PicPay: Arquitetura de Alto Volume</h3>-->
+<!--                            <div class="event-location" itemprop="location" itemscope-->
+<!--                                 itemtype="https://schema.org/VirtualLocation">-->
+<!--                                <i class="bi bi-camera-video" aria-hidden="true"></i>-->
+<!--                                <span itemprop="url">Online</span>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        <article class="timeline-item" role="listitem"-->
+<!--                                 itemscope itemtype="https://schema.org/Event">-->
+<!--                            <time class="event-date" datetime="2025-11-25" itemprop="startDate">25 Nov 2025</time>-->
+<!--                            <h3 class="event-title" itemprop="name">Laravel Brasil Conference</h3>-->
+<!--                            <div class="event-location" itemprop="location" itemscope-->
+<!--                                 itemtype="https://schema.org/Place">-->
+<!--                                <i class="bi bi-geo-alt" aria-hidden="true"></i>-->
+<!--                                <span itemprop="address">Belo Horizonte, MG</span>-->
+<!--                            </div>-->
+<!--                        </article>-->
+
+<!--                        <article class="timeline-item" role="listitem"-->
+<!--                                 itemscope itemtype="https://schema.org/Event">-->
+<!--                            <time class="event-date" datetime="2025-12-15" itemprop="startDate">15 Dez 2025</time>-->
+<!--                            <h3 class="event-title" itemprop="name">PHP Summit 2025</h3>-->
+<!--                            <div class="event-location" itemprop="location" itemscope-->
+<!--                                 itemtype="https://schema.org/VirtualLocation">-->
+<!--                                <i class="bi bi-camera-video" aria-hidden="true"></i>-->
+<!--                                <span itemprop="url">Online</span>-->
+<!--                            </div>-->
+<!--                        </article>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+</div>

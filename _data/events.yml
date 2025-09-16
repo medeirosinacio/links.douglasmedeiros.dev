@@ -1,0 +1,26 @@
+- name: "PHPeste 2025"
+  description: "Autópsia de um Banco de Dados de Alta Performance"
+  url: "https://phppiaui.com.br/"
+  talk: "Autópsia de um Banco de Dados de Alta Performance"
+  date: "03 e 04 de Outubro de 2025"
+  location: "Parnaíba, PI"
+  icon: "bi-geo-alt"
+  enabled: true
+
+- name: "Meetup PHPRS"
+  description: ""
+  url: "https://phprs.org"
+  talk: ""
+  date: "18 de Outubro de 2025"
+  location: "Porto Alegre, RS"
+  icon: "bi-geo-alt"
+  enabled: true
+
+- name: "PHP Conference Brasil 2025"
+  description: "A Definir"
+  url: "https://phpconference.com.br"
+  talk: "A Definir"
+  date: "01 a 06 de Dezembro de 2025"
+  location: "Online"
+  icon: "bi-camera-video"
+  enabled: true
