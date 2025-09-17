@@ -28,8 +28,8 @@
   icon: "bi-github"
   enabled: true
 
-- name: "Site Principal"
-  description: "O primeiro de seu nome"
-  url: "https://douglasmedeiros.dev/"
-  icon: "bi-person"
-  enabled: true
+#- name: "Site Principal"
+#  description: "O primeiro de seu nome"
+#  url: "https://douglasmedeiros.dev/"
+#  icon: "bi-person"
+#  enabled: true

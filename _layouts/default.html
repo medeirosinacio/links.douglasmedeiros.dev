@@ -4,12 +4,14 @@ layout: html_minifier
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
 {% include head.html %}
-<body class="d-flex flex-column h-100" cz-shortcut-listen="true">
+<body class="d-flex flex-column h-100" cz-shortcut-listen="true" id="bg-home-gif">
 <h1 style="display: none">{{ site.title }}</h1>
+<div style="background-color: rgba(0,0,0,0.66); padding-bottom: 10px">
 <main class="flex-shrink-0">
     {{ content }}
 </main>
 {% include footer.html %}
+</div>
 <script src="{{ site.srcurl }}{{ site.js_path }}bootstrap/bootstrap.bundle.js"></script>
 <script src="{{ site.srcurl }}{{ site.js_path }}bundle.js"></script>
 </body>

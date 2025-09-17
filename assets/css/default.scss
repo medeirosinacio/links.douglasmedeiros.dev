@@ -29,22 +29,16 @@ body {
   font-family: 'Lato', sans-serif;
   background: var(--bg-dark);
   color: var(--text-light);
-  overflow-x: hidden;
-}
-
-.bg-home-gif {
   width: 100%;
   height: 100vh;
   top: 0;
   right: 0;
-  z-index: -3;
-  position: absolute;
+  position: absolute !important;
   background-image: url("/assets/images/bg-home.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #000;
-  opacity: 0.3 !important;
 }
 
 /* Performance optimizations */
@@ -354,7 +348,7 @@ img, video, iframe {
   }
 
   .timeline-item::before {
-    left: -2.25rem;
+    left: -1.55rem;
     width: 0.75rem;
     height: 0.75rem;
   }
