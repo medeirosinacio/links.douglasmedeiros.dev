@@ -1,35 +1,35 @@
 - name: "Blog"
-  description: "Artigos técnicos e insights sobre desenvolvimento e carreira"
+  description: "Artigos, novidades e insights sobre tecnologia e carreira"
   url: "https://blog.douglasmedeiros.dev/"
   icon: "bi-journal-text"
   enabled: true
 
 - name: "Instagram"
-  description: "Conteúdo visual e atualizações pessoais"
+  description: "Atualizações e vida pessoal"
   url: "https://instagram.com/douglasmedeiros.dev"
   icon: "bi-instagram"
   enabled: true
 
 - name: "Twitter"
-  description: "Reflexões e discussões muitas vezes sem sentido"
+  description: "Discussões muitas vezes sem sentido"
   url: "https://twitter.com/aqueleMetal"
   icon: "bi-twitter"
   enabled: true
 
 - name: "LinkedIn"
-  description: "Rede profissional e atualizações da carreira"
+  description: "Carreira e as vezes oportunidades"
   url: "https://linkedin.com/in/medeirosinacio"
   icon: "bi-linkedin"
   enabled: true
 
 - name: "GitHub"
-  description: "Projetos open source, contribuições e código público"
+  description: "show me the code"
   url: "https://github.com/medeirosinacio"
   icon: "bi-github"
   enabled: true
 
 - name: "Site Principal"
-  description: "Meu site pessoal, o primeiro de seu nome"
+  description: "O primeiro de seu nome"
   url: "https://douglasmedeiros.dev/"
   icon: "bi-person"
   enabled: true
