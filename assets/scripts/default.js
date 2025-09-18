@@ -113,15 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
         initEventListeners();
     }
 
-    // Service Worker para cache (opcional)
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js').catch(() => {
-                // Silently fail if no service worker
-            });
-        });
-    }
-
 })();
 
 // Google Analytics (substitua pelo seu ID)

@@ -1,7 +1,7 @@
 # General
 title: Douglas Medeiros
 email: eu@douglasmedeiros.dev
-description: Links do Douglas Medeiros - Software Engineer @ PicPay | Engenheiro de Software | Apaixonado por Tecnologia e Inovação
+description: Linktree
 source: .
 destination: ./public
 baseurl: ""
@@ -22,7 +22,7 @@ social:
     - https://github.com/medeirosinacio
     - https://www.linkedin.com/in/medeirosinacio/
 type: links
-keywords: Douglas Medeiros, Douglas, Medeiros, Software, Engenheiro, PicPay, Links, Instagram, Twitter, LinkedIn, GitHub
+keywords: Douglas Medeiros, Douglas, Medeiros, Software, Engenheiro, PicPay, Links, Instagram, Twitter, LinkedIn, GitHub, linktree
 
 # Site Paths
 post_path: /assets/images/posts/
