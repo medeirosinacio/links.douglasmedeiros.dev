@@ -1,6 +1,7 @@
 # General
 title: Douglas Medeiros
 email: eu@douglasmedeiros.dev
+description: Links do Douglas Medeiros - Software Engineer @ PicPay | Engenheiro de Software | Apaixonado por Tecnologia e Inovação
 source: .
 destination: ./public
 baseurl: ""
@@ -14,12 +15,14 @@ published: true
 
 # Social Media
 social:
-  name: Example Author
+  name: Douglas Medeiros
   links:
-    - https://www.instagram.com/example_author/
-    - https://twitter.com/example_author
-    - https://github.com/example_author
-    - https://www.linkedin.com/in/example_author/
+    - https://www.instagram.com/douglasmedeiros.dev/
+    - https://bsky.app/profile/douglasmedeiros.dev
+    - https://github.com/medeirosinacio
+    - https://www.linkedin.com/in/medeirosinacio/
+type: links
+keywords: Douglas Medeiros, Douglas, Medeiros, Software, Engenheiro, PicPay, Links, Instagram, Twitter, LinkedIn, GitHub
 
 # Site Paths
 post_path: /assets/images/posts/
@@ -32,11 +35,9 @@ js_path: /assets/scripts/
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-autoprefixer
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
 sass:
   sass_dir: assets/css
   style: compressed
