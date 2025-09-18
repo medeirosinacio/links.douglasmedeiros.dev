@@ -3,6 +3,7 @@ layout: blank
 title: 404 Not Found
 layout: default
 title: 404
+redirect_to: /
 ---
 <script>
     // Redirect if URL ends with a trailing slash
@@ -10,6 +11,7 @@ title: 404
         const newPath = window.location.pathname.slice(0, -1) + window.location.search + window.location.hash;
         window.location.replace(newPath);
     }
+    window.location.href = "/"
 </script>
 <style>
 
@@ -200,7 +202,7 @@ title: 404
     }
 </style>
 <div class="error-content mt-md-5 pt-3">
-    <div class="container">
+    <div class="container vh-100">
         <div class="row justify-content-center">
             <div class="col-sm-10 ">
                 <div class="error-text">
