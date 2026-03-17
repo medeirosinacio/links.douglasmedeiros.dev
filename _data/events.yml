@@ -1,30 +1,30 @@
-- name: "Meetup PHPRS"
+- name: "PHP Velho Oeste 2026"
   description: ""
-  url: "https://phprs.org"
+  url: "https://www.phpvelhoeste.com.br/2026/"
   talk: ""
-  date: "18 de Outubro de 2025"
-  location: "Porto Alegre, RS"
+  date: "29 e 30 de Maio de 2026"
+  location: "Chapecó, SC"
   icon: "bi-geo-alt"
   enabled: true
 
-- name: "Python Sul 2025"
-  description: "Do Caos à Clareza: Explorando a Modelagem de Software e Nem Só de Código Vive o Dev"
-  url: "https://sul.python.org.br/"
-  talk: "Do Caos à Clareza: Explorando a Modelagem de Software e Nem Só de Código Vive o Dev"
-  date: "21 a 23 de Novembro de 2025"
-  location: "Porto Alegre, RS"
-  icon: "bi-geo-alt"
-  enabled: true
-
-- name: "PHP Conference Brasil 2025"
-  description: "Do Caos à Clareza: Explorando a Modelagem de Software"
-  url: "https://phpconference.com.br"
-  talk: "Do Caos à Clareza: Explorando a Modelagem de Software"
-  date: "01 a 06 de Dezembro de 2025"
-  location: "Maringá, PR"
-  icon: "bi-geo-alt"
-  enabled: true
-
+#- name: "Python Sul 2025"
+#  description: "Do Caos à Clareza: Explorando a Modelagem de Software e Nem Só de Código Vive o Dev"
+#  url: "https://sul.python.org.br/"
+#  talk: "Do Caos à Clareza: Explorando a Modelagem de Software e Nem Só de Código Vive o Dev"
+#  date: "21 a 23 de Novembro de 2025"
+#  location: "Porto Alegre, RS"
+#  icon: "bi-geo-alt"
+#  enabled: true
+#
+#- name: "PHP Conference Brasil 2025"
+#  description: "Do Caos à Clareza: Explorando a Modelagem de Software"
+#  url: "https://phpconference.com.br"
+#  talk: "Do Caos à Clareza: Explorando a Modelagem de Software"
+#  date: "01 a 06 de Dezembro de 2025"
+#  location: "Maringá, PR"
+#  icon: "bi-geo-alt"
+#  enabled: true
+#
 #- name: "PHP Conference Brasil 2025"
 #  description: "A Definir"
 #  url: "https://phpconference.com.br"
